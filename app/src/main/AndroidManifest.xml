@@ -12,16 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileProject"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.MobileProject">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <activity android:name=".AddCustomerActivity" />
+        <activity android:name=".AddCarDetailsActivity" />
+        <activity android:name=".ScheduleMaintenanceActivity" />
+        <activity android:name=".TrackOngoingServicesActivity" />
+
+    </application>
 </manifest>
