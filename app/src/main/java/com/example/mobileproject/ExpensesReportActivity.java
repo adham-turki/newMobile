@@ -49,7 +49,6 @@ public class ExpensesReportActivity extends AppCompatActivity {
 
     private void setupRecyclerView() {
         rvExpenses.setLayoutManager(new LinearLayoutManager(this));
-        // Set up your RecyclerView adapter here
     }
 
     private void setupClickListeners() {

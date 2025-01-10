@@ -39,11 +39,8 @@ public class AddCustomerActivity extends AppCompatActivity {
                 if (TextUtils.isEmpty(name) || TextUtils.isEmpty(contact) || TextUtils.isEmpty(address)) {
                     Toast.makeText(AddCustomerActivity.this, "All fields are required", Toast.LENGTH_SHORT).show();
                 } else {
-                    // Simulate data submission to MySQL database
-                    // Add animation to button click
                     btnSubmit.startAnimation(AnimationUtils.loadAnimation(AddCustomerActivity.this, R.anim.button_click));
 
-                    // Delay toast and clear fields to allow animation to complete
                     btnSubmit.postDelayed(new Runnable() {
                         @Override
                         public void run() {

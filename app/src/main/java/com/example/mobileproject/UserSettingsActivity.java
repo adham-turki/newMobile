@@ -61,7 +61,6 @@ public class UserSettingsActivity extends AppCompatActivity {
         });
 
         switchDarkMode.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            // Implement dark mode toggle
             AppCompatDelegate.setDefaultNightMode(
                     isChecked ? AppCompatDelegate.MODE_NIGHT_YES : AppCompatDelegate.MODE_NIGHT_NO
             );
