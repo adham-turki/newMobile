@@ -48,7 +48,7 @@
                         app:tint="@color/colorAccent"
                         android:layout_marginEnd="8dp"/>
 
-                    <TextView
+       a             <TextView
                         android:id="@+id/tvCurrentCar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
