@@ -28,5 +28,10 @@
         <activity android:name=".ScheduleMaintenanceActivity" />
         <activity android:name=".TrackOngoingServicesActivity" />
 
+        <activity android:name=".ExpensesReportActivity" />
+        <activity android:name=".FeedbackActivity" />
+        <activity android:name=".UserSettingsActivity" />
+        <activity android:name=".HelpSupportActivity" />
+
     </application>
 </manifest>

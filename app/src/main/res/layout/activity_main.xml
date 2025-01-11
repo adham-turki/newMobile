@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
@@ -12,50 +14,87 @@
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true">
 
+
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:title="Main Menu"
-            app:titleTextColor="@android:color/white" />
+            android:title="@string/main_menu"
+            app:navIcon="@drawable/ic_menu"
+            app:titleTextColor="@android:color/black" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:gravity="center">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <Button
-            android:id="@+id/btnAddCustomer"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Add Customer"
-            android:layout_marginBottom="16dp" />
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
 
-        <Button
-            android:id="@+id/btnAddCarDetails"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Add Car Details"
-            android:layout_marginBottom="16dp" />
+            <Button
+                android:id="@+id/btnAddCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Customer"
+                android:layout_marginBottom="16dp" />
 
-        <Button
-            android:id="@+id/btnScheduleMaintenance"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Schedule Maintenance"
-            android:layout_marginBottom="16dp" />
+            <Button
+                android:id="@+id/btnAddCarDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Car Details"
+                android:layout_marginBottom="16dp" />
 
-        <Button
-            android:id="@+id/btnTrackServices"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Track Ongoing Services" />
+            <Button
+                android:id="@+id/btnScheduleMaintenance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Schedule Maintenance"
+                android:layout_marginBottom="16dp" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/btnTrackServices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Track Ongoing Services"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnExpensesReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expenses Report"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feedback"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnUserSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Settings"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnHelpSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help &amp; Support" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
