@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
@@ -12,12 +14,14 @@
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true">
 
+
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:title="Main Menu"
-            app:titleTextColor="@android:color/white" />
+            android:title="@string/main_menu"
+            app:navIcon="@drawable/ic_menu"
+            app:titleTextColor="@android:color/black" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
